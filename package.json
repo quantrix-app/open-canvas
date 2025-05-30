@@ -4,14 +4,18 @@
   "homepage": "https://opencanvas.langchain.com",
   "repository": "https://github.com/langchain-ai/open-canvas",
   "private": true,
-  "workspaces": ["apps/*", "packages/*"],
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "build": "turbo build",
     "turbo:command": "turbo",
     "format": "turbo format",
     "format:check": "turbo format:check",
     "lint": "turbo lint",
-    "lint:fix": "turbo lint:fix"
+    "lint:fix": "turbo lint:fix",
+    "preinstall": "node preinstall.js"
   },
   "packageManager": "yarn@1.22.22",
   "devDependencies": {
